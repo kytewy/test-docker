@@ -52,4 +52,4 @@ jobs:
 
       - name: Run ok
         run: |
-          docker run --rm --name wyatt-test-run ghcr.io/kyryl-opens-ml/hello-wyatt:latest
+          docker run --rm --name wyatt-test-run ghcr.io/kytewy/hello-wyatt:latest
