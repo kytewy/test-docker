@@ -1,0 +1,4 @@
+Trigger a build because I am in
+    paths:
+      - 'basic/**'
+!!!
