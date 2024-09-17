@@ -1,0 +1,30 @@
+name: Basic
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'basic/**'
+
+env:
+  IMAGE_ML_APP: hello-wyatt
+
+jobs:
+  ci-test-bash-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Test echo
+        run: |
+          echo 'test'
+
+      - name: Test ls
+        run: |
+          ls -all .
